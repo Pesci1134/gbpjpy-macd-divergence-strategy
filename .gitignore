@@ -41,6 +41,9 @@ results/
 results_v6/
 results_v7/
 *.csv
+!ローソク足データ/GBPJPY_5M_2015-2025.csv
+!ローソク足データ/GBPJPY_1H_2013-2025.csv
+!ローソク足データ/GBPJPY_4H_2013-2025.csv
 !requirements.txt
 
 # Temporary files
